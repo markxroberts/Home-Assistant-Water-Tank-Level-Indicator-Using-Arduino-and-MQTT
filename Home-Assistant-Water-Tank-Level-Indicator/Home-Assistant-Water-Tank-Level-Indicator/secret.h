@@ -17,8 +17,8 @@
 const char* mqtt_server = "xxx.xxx.xx.xxx";           //MQTT server ip address
 const int mqttPort = xxxx;                            //MQTT broker port
 
-const char* mqttUser = "Your MQTT Username";          //MQTT broker username
-const char* mqttPassword = "Your MQTT Password";      //MQTT broker user password
+const char* mqttUser = "Your MQTT Username";          //MQTT broker username - this can be blank
+const char* mqttPassword = "Your MQTT Password";      //MQTT broker user password - this can be blank
 
 
 /***************************************************
