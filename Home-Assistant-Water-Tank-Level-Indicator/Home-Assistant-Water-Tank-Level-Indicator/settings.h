@@ -23,12 +23,12 @@ int BUILD_NUMBER = 0;                         // Build number is something like 
 //Our rectangular tank capacity in liters; 39,600 Liters full tank capacity
 //(length x width x height)/1000(to convert to ltrs) = (472*290*274)/1000=37505120/1000 = 37505.12 liters; I just used 37,000 Ltrs
 
-#define FULLTANK 37000                        //in liters                         
+#define FULLTANK 6500                        //in liters                         
 #define MINIMUMRANGE 20                       // sensor needs minimum 20 cm distance to work
 
 
-#define WATER_TANK_LENGTH_IN_CM 472           // Water tank lenght in cm
-#define WATER_TANK_WIDTH_IN_CM 290            // water tank width in cm
+#define WATER_TANK_LENGTH_IN_CM 213           // Water tank lenght in cm
+#define WATER_TANK_WIDTH_IN_CM 213            // water tank width in cm
 
 //Tank original height(depth) is: 310cm. Sensor takes 2 inches (5.08 cm) of height and sensor need minimum 20cm distance to work.
 // And I keep 10cm keep extra margin.
@@ -36,7 +36,7 @@ int BUILD_NUMBER = 0;                         // Build number is something like 
 //Waste tank height = 5.08cm + 20cm + 10cm = 35.08cm.  New tank height = original tank height - waste tank height.
 //New tank height = 310cm - 35.08cm = 274.92cm; I consider 274cm.
 
-#define WATER_TANK_HEIGHT_IN_CM 274           // 274cm is after reducing 20cm + 5.08cm +10cm height from original tank height to work sensor
+#define WATER_TANK_HEIGHT_IN_CM 122           // 274cm is after reducing 20cm + 5.08cm +10cm height from original tank height to work sensor
 
 /***************************************************
  * 
