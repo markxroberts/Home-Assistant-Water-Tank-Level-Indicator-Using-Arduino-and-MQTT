@@ -1,6 +1,5 @@
 #include "settings.h"
- //#include "secret.h"                   // <<--- UNCOMMENT this before you use and change values on config.h tab
-#include "my_secret.h"                   // <<--- COMMENT-OUT or REMOVE this line before you use. This is my personal settings.
+#include "secret.h"                   // <<--- UNCOMMENT this before you use and change values on config.h tab
 #include <PubSubClient.h>
 #include <ESP8266WiFi.h>
 #include <ArduinoOTA.h>
@@ -43,7 +42,7 @@ void setup() {
   pinMode(TRIGPIN, OUTPUT);
   pinMode(ECHOPIN, INPUT);
 
-  WiFi.begin(ssid, password);                                             // Start wifi subsystem  
+  WiFi.begin(WIFI_SSID, WIFI_PASS);                                       // Start wifi subsystem  
   reconnectWifi();                                                        // Attempt to connect to the WIFI network and then connect to the MQTT server
   delay(2000);                                                            // Wait a bit before starting the main loop
  
